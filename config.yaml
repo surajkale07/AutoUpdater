@@ -1,5 +1,5 @@
 
-repository_url: "https://<your secret key>@github.com/surajkale07/testrepo.git" 
-local_repo_path: "/home/sagarover/testrepo"
-webhook_secret: "surajwebhooksecret"  
-branch: "main"
+repository_url: "https://<your secret key>@github.com/<username>/<repository_name>.git" 
+local_repo_path: "<local_repo_path>"
+webhook_secret: "<yoursecretkey>"  
+branch: "<branchname>"
