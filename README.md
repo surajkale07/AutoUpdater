@@ -63,13 +63,15 @@ cd ci-cd-tool
 Update the `config.yaml` file with your repository details:
 
 ```yaml
-repo_url: "https://github.com/your-username/your-repo.git"
+repo_url: "https://<personalaccesstoken>@github.com/your-username/your-repo.git"
 repo_path: "path/to/your/local/repo"
+webhook_secret: "yoursecretkey"  
 branch: "main"
 ```
 
 - `repo_url`: URL of your remote GitHub repository.
 - `repo_path`: Path to your local repository directory.
+- `webhook_secret`: Get it from remote repo settings.
 - `branch`: The branch to sync with (default is `main`).
 
 ### 3. Set Up Git Authentication
@@ -80,9 +82,6 @@ Ensure that Git is configured for authentication using one of the following meth
 
 Generate a [Personal Access Token](https://github.com/settings/tokens) and configure it in your Git credentials manager.
 
-#### b. SSH Keys
-
-Set up SSH keys for authentication. Refer to the [GitHub SSH documentation](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) for instructions.
 
 ### 4. Install Dependencies
 
