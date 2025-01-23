@@ -1,0 +1,4 @@
+GitPython
+watchdog
+flask
+PyYAML
